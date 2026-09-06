@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #2196F3;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-features {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-features h4 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .key-features ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .key-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .key-features li::before {
+            content: "•";
+            color: #2196F3;
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-section {
+            margin-top: 1.5rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-title-group {
+            flex-grow: 1;
+        }
+
+        .project-timeline {
+            font-size: 0.9rem;
+            color: #1976d2;
+            background: #e3f2fd;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .project-card {
+                padding: 1.5rem;
+            }
+
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Projects</h2>
+        
+        <!-- Study Group Finder App -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title">Policy-Hub</h3>
+                </div>
+                <span class="project-timeline">Jan 2026 - May 2026</span>
+            </div>
+            <div class="project-description">
+                <p>A medical policy database that holds all the information on policies for medical opertation to create an organized datebase for policy information</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Easy access to policy information</li>
+                    <li>Indepth database with access to all policies </li>
+                    <li>Matching policy information to patients</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">User Authentication</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grading Platform -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title">Pokemon Tournamnet Bot</h3>
+                </div>
+                <span class="project-timeline">June 2025 - Present</span>
+            </div>
+            <div class="project-description">
+                <p>A bot to record and calculate standing and winning in a Tournamnet. With features like drafting and team editing designed with easy use for anyone to use  </p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Comprehensive Drafting featuring multiple ways for users to draft based on the rules of their league</li>
+                    <li>Database Management to hold info about matches and players</li>
+                    <li>Automated standing calculations</li>
+
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Data Visualization</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Campus Navigation System -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title">Finance Tracking App</h3>
+                </div>
+                <span class="project-timeline">Jan 2026 - May 2026</span>
+            </div>
+            <div class="project-description">
+                <p>A user-friendly finance app to track spending and deposits from the user to improve finances</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Goal setting features</li>
+                    <li>Finance Categorization</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">Mobile Development</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
